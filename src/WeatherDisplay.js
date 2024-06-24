@@ -1,11 +1,12 @@
-import React, {useState}  from "react";
+import React from "react";
 import './App.css';
 
-export default function WeatherDisplay({filterText, filteredWeather, }) {
+export default function WeatherDisplay({ filterText, filteredWeather }) {
 
     const arrayDataItems = filteredWeather.filter(a => a.location.name.toLowerCase().includes(filterText));
     return (
         <>
+            <p>Weather details</p>
             <ul>
                 {arrayDataItems.map(item =>
                     <li key={item.location.name}>
