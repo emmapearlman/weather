@@ -4,7 +4,7 @@ import WeatherDisplay from "./WeatherDisplay";
 import WeatherData from "./WeatherData";
 
 export default function WeatherTable(){
-    const [filterText, setFilterText] = useState("");
+    const [filterText, setFilterText] = useState(' ');
     const [filteredWeather, setFilteredWeather] = useState(WeatherData);
     return (
         <>
